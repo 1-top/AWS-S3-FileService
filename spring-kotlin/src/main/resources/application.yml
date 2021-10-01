@@ -1,0 +1,22 @@
+cloud:
+  aws:
+    credentials:
+      access-key:
+      secret-key:
+    s3:
+      bucket:
+        name: hello-spring-kotlin-s3
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+
+spring:
+  application:
+    name: fileservice
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 10MB
+
